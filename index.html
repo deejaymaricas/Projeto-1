@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Project One</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>Imagens de Tela Cheia</title>
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f5f7;
-            color: #1d1d1f;
-            padding: 20px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
+
+        html, body {
+            height: 100%;
         }
-        .project-image {
-            width: 100%;
-            max-width: 1433px;
-            height: auto;
+
+        .container {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
         }
-        .icons {
-            margin-top: 20px;
+
+        .image {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
         }
-        .icons img {
-            width: 40px; /* Ajuste o tamanho do ícone conforme necessário */
-            margin-right: 10px;
+
+        .image1 {
+            background-image: url('giorno_project_image.png');
+        }
+
+        .image2 {
+            background-image: url('giorno_project_video.mp4');
         }
     </style>
 </head>
 <body>
-    <h2>Project One</h2>
-    <img src="https://via.placeholder.com/1433x1123" alt="Project One" class="project-image">
-    <p>This project focuses on creating a modern website with an emphasis on user experience and performance. It utilizes the latest technologies to ensure fast loading times and an intuitive interface.</p>
-    
-    <div class="icons">
-        <img src="path/to/canva-icon.png" alt="Canva">
-        <img src="path/to/photoshop-icon.png" alt="Photoshop">
+    <div class="container">
+        <div class="image image1"></div>
+        <div class="image image2"></div>
     </div>
 </body>
 </html>
